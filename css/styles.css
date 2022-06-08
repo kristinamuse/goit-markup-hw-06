@@ -652,6 +652,11 @@ textarea{
 }
 
 /* footer */
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+}
+
 .footer{
     background-color:#2F303A;
     padding: 60px 0px;
@@ -698,14 +703,11 @@ textarea{
     color: var(--accent-colour);
 }
 
-.footer-container{
-    display: flex;
-}
 
 .socialmedia{
     width: 206px;
     height: 80px;
-    margin-left: 70px;
+    /* margin-left: 70px; */
 }
 
 .socialmedia-title{
@@ -756,7 +758,7 @@ textarea{
 .subscribe-form{
     display: flex;
     align-items: flex-end;
-    margin-left: 93px;
+    /* margin-left: 93px; */
 }
 
 .subscribe-text{
