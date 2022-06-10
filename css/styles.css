@@ -452,8 +452,8 @@ textarea {
     border: 0;
 }
 
-.checkbox-icon:focus{
-    border: 2px solid var(--accent-colour);
+.checkbox-input:focus + .checkbox-icon{
+    border-color: var(--accent-colour);
 }
 
 .checkbox-label{
