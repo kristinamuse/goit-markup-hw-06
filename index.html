@@ -59,7 +59,7 @@
         <div class="backdrop is-hidden" data-modal>
             <div class="modal">
                     <button type="button" class="modal-button" data-modal-close>
-                        <svg class="modal-icon" width="11" height="11">
+                        <svg width="11" height="11" class="modal-icon">
                             <use href="./images/sprite.svg#icon-exit"></use>
                         </svg>
                     </button>
@@ -69,15 +69,30 @@
                         <ul class="list">
                             <li class="form-field">
                                 <label for="name" class="form-label">Ім'я</label>
-                                <input type="text" name="name" id="name" class="form-input">
+                                <div class="group">
+                                    <input type="text" name="name" id="name" class="form-input">
+                                    <svg width="12" height="12" class="group-icon">
+                                        <use href="./images/sprite.svg#icon-name"></use>
+                                    </svg>
+                                </div>
                             </li>
                             <li class="form-field">
                                 <label for="tel" class="form-label">Телефон</label>
-                                <input type="tel" name="tel" id="tel" class="form-input">
+                                <div class="group">
+                                    <input type="tel" name="tel" id="tel" class="form-input">
+                                    <svg width="13" height="13" class="group-icon">
+                                        <use href="./images/sprite.svg#icon-tel"></use>
+                                    </svg>
+                                </div>
                             </li>
                             <li class="form-field">
                                 <label for="mail" class="form-label">Пошта</label>
-                                <input type="email" name="mail" id="mail" class="form-input">
+                                <div class="group">
+                                    <input type="email" name="mail" id="mail" class="form-input">
+                                    <svg width="15" height="12" class="group-icon">
+                                        <use href="./images/sprite.svg#icon-mail"></use>
+                                    </svg>
+                                </div>
                             </li>
                             <li class="form-field">
                                 <label for="comment" class="form-label">Коментар</label>
@@ -86,8 +101,13 @@
                         </ul>
 
                         <p class="form-checkbox">
-                            <input type="checkbox" name="agreement" id="agreement" class="checkbox-input">
-                            <label for="agreement" class="checkbox-label">Погоджуюся з розсилкою та приймаю <a href="" class="checkbox-link">Умови договору</a></label>
+                            <label class="checkbox-label">
+                                <input type="checkbox" name="agreement" class="checkbox-input">
+                                <svg width="16" height="15" class="checkbox-icon">
+                                    <use href="./images/sprite.svg#icon-check"></use>
+                                </svg>
+                                Погоджуюся з розсилкою та приймаю <a href="" class="checkbox-link">Умови договору</a>
+                            </label>
                         </p>
 
                         <div class="form-btn"><button type="submit" class="form-button">Надіслати</button></div>
@@ -435,10 +455,12 @@
                     </ul>
                 </div>
                 <div class="subscribe">
-                    <form action="#" class="subscribe-form">
+                    <form class="subscribe-form">
                     <div class="group-subscribe">
                         <p class="subscribe-text">Підпишіться на розсилку</p>
-                        <input type="email" name="mail" placeholder="E-mail" class="subscribe-input">
+                        <label class="subscribe-label">
+                            <input type="email" name="mail" placeholder="E-mail" class="subscribe-input">
+                        </label>
                     </div>
                     <button type="submit" class="subscribe-button">
                         Підписатися
